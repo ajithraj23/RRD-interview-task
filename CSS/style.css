@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Varta", sans-serif;
+  margin: 0 auto;
+}
+section {
+  max-width: 1152px;
+}
+
+header{
+  position: relative;
+}
+.scroll{
+content: "";
+position: absolute;
+width: 10px;
+height: 50px;
+background-color: black;
+top: 20px;
+
+}
+.logo {
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+.head-content {
+  font-size: 18px;
+  width: 650px;
+  margin: 0;
+  padding-left: 30px;
+  margin-bottom: 100px;
+  font-style: italic;
+}
+.slide {
+  font-size: 20px;
+  height: 30rem;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  max-width: 90%;
+  padding: 0 20px;
+}
+
+.alloys {
+  color: black;
+  position: absolute;
+  top: 0;
+  width: 30%;
+  height: 25rem;
+  transition: transform 1s;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.alloys.active {
+  background-image: url(/Images/wheel-bg.jpg);
+}
+
+.alloy-img {
+  margin: auto;
+}
+
+.alloy-img img {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.prod-details {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+.type {
+  width: 210px;
+}
+
+.prod-details h3 {
+  text-transform: uppercase;
+}
+.wheels {
+  position: relative;
+}
+.wheels::before {
+  content: "";
+  background-image: url(/Images/bg-cover.png);
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 70%;
+  bottom: 0;
+  background-position: bottom;
+}
+
+.slider__btn--left,
+.slider__btn--right {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  position: absolute;
+  top: 27%;
+  left: 0;
+}
+
+.slider__btn--left.disable,
+.slider__btn--right.disable {
+  opacity: 0.3;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+.slider__btn--right {
+  right: 0;
+  left: auto;
+}
+
+
